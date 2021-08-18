@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-18 23:48:54
- * @LastEditTime: 2021-08-19 01:02:52
+ * @LastEditTime: 2021-08-19 01:32:48
  * @LastEditors: Please set LastEditors
  * @Description: 新建代办
  * @FilePath: \todo-list-js\create.html
@@ -20,11 +20,6 @@
     .form{
         margin: 0 auto;
     }
-    .form-submit{
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 </style>
 <body>
     <div class="create-container">
@@ -38,14 +33,19 @@
                     <span class="form-label">内容:</span>
                     <textarea name="" id="" cols="30" rows="10" class="form-item__content form-textarea todo-content"></textarea>
                 </div>
-                <button type="button" class="btn form-submit">提交</button>
+                <button type="button" class="btn btn-primary form-submit">提交</button>
+                <button type="button" class="btn form-cancel">取消并返回</button>
             </form>
         </div>
     </div>
 </body>
 <script>
     const submitBtn=document.querySelector(".form-submit");
+    const cancelBtn=document.querySelector(".form-cancel");
     submitBtn.onclick=()=>{
+        alert('新增代办成功')
+    }
+    cancelBtn.onclick=()=>{
         window.location.href="./index.html";
     }
 </script>
