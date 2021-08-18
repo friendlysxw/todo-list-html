@@ -1,0 +1,60 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-08-18 20:14:01
+ * @LastEditTime: 2021-08-19 01:18:59
+ * @LastEditors: Please set LastEditors
+ * @Description: 代办详情
+ * @FilePath: \todo-list-js\detail.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./common.css">
+</head>
+<style>
+    .detail-container{
+        font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    }
+    .detail-header{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        justify-content: space-between;
+    }
+    .detail-header .detail-title{
+        font-size: 20px;
+        flex:1;
+    }
+    .detail-header .backto{
+        margin-left: 50px;
+    }
+    .detail-content{
+        font-size: 14px;
+    }
+</style>
+<body>
+    <div class="detail-container">
+        <div class="basic-container">
+            <div class="detail-header">
+                <span class="detail-title">我是标题我是标题我是标我是标题我是标题我是标题</span> 
+                <button class="btn backto">返回列表</button>
+            </div>
+            <div class="divider"></div>
+            <div class="detail-content">
+                我是详细内容
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const backtoBtn=document.querySelector('.backto');
+    backtoBtn.onclick=()=>{
+        window.location.href="./index.html"
+    }
+</script>
+</html>
