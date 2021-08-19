@@ -1,5 +1,6 @@
 body{
     background: #f4f5f5;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 ul,ol{
     list-style:none;
@@ -7,17 +8,25 @@ ul,ol{
     padding: 0px;
 }
 
-/* 基础内容视图样式 */
-.basic-container {
+/* 内置基础内容盒子样式 */
+.s-basic-container {
     width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
 }
-
+.s-header-title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    color:#303133;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dcdfe6;
+}
 /* 内置按钮样式 */
-.btn {
+.s-btn {
     display: inline-block;
     line-height: 1;
     white-space: nowrap;
@@ -39,87 +48,87 @@ ul,ol{
     font-size: 14px;
     border-radius: 4px
 }
-.btn:hover,.btn:focus {
+.s-btn:hover,.s-btn:focus {
     background: #fff;
     border-color: #409eff;
     color: #409eff;
 }
 
-.btn-primary {
+.s-btn-primary {
     color: #409eff;
     background: #ecf5ff;
     border-color: #b3d8ff;
 }
-.btn-primary:hover,.btn-primary:focus{
+.s-btn-primary:hover,.s-btn-primary:focus{
     color: #fff;
     background-color: #409eff;
     border-color: #409eff;
 }
 
-.btn-success {
+.s-btn-success {
     color: #67c23a;
     background: #f0f9eb;
     border-color: #c2e7b0;
 }
-.btn-success:hover,.btn-success:focus{
+.s-btn-success:hover,.s-btn-success:focus{
     color: #fff;
     background-color: #67c23a;
     border-color: #67c23a;
 }
 
-.btn-info {
+.s-btn-info {
     color: #909399;
     background: #f4f4f5;
     border-color: #d3d4d6;
 }
-.btn-info:hover,.btn-info:focus{
+.s-btn-info:hover,.s-btn-info:focus{
     color: #fff;
     background-color: #909399;
     border-color: #909399;
 }
 
-.btn-warning {
+.s-btn-warning {
     color: #e6a23c;
     background: #fdf6ec;
     border-color: #f5dab1;
 }
-.btn-warning:hover,.btn-warning:focus{
+.s-btn-warning:hover,.s-btn-warning:focus{
     color: #fff;
     background-color: #e6a23c;
     border-color: #e6a23c;
 }
 
-.btn-danger {
+.s-btn-danger {
     color: #f56c6c;
     background: #fef0f0;
     border-color: #fbc4c4;
 }
-.btn-danger:hover,.btn-danger:focus{
+.s-btn-danger:hover,.s-btn-danger:focus{
     color: #fff;
     background-color: #f56c6c;
     border-color: #f56c6c;
 }
 
-.btn-mini {
+.s-btn-mini {
     padding: 7px 15px;
     font-size: 12px;
     border-radius: 3px;
 }
-.is-round {
+.s-is-round {
     border-radius: 20px;
     padding: 12px 23px;
 }
 
 /* 内置表单样式 */
-.form{
+.s-form{
     display: block;
-    margin-top: 0em;
     width: 460px;
+    margin: 0 auto;
 }
-.form-item{
+.s-form-item{
     margin-bottom: 22px;
 }
-.form-item__label{
+.s-form-item__label{
     text-align: right;
     vertical-align: middle;
     float: left;
@@ -129,13 +138,13 @@ ul,ol{
     padding: 0 12px 0 0;
     box-sizing: border-box;
 }
-.form-item__content{
+.s-form-item__content{
     line-height: 40px;
     position: relative;
     font-size: 14px;
     margin-top: 10px;
 }
-.form-input{
+.s-form-input{
     position: relative;
     font-size: 14px;
     display: inline-block;
@@ -157,12 +166,12 @@ ul,ol{
     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
     width: 100%;
 }
-.form-input:focus{
+.s-form-input:focus{
     outline: none;
     border-color: #409eff;
 }
 
-.form-textarea{
+.s-form-textarea{
     position: relative;
     display: inline-block;
     width: 100%;
@@ -183,13 +192,13 @@ ul,ol{
     border-radius: 4px;
     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
 }
-.form-textarea:focus{
+.s-form-textarea:focus{
     outline: none;
     border-color: #409eff;
 }
 
 /* 内置分割线 */
-.divider{
+.s-divider{
     display: block;
     height: 1px;
     width: 100%;

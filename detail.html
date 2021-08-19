@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>详情</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./common.css">
 </head>
 <style>
-    .detail-container{
-        font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-    }
     .detail-header{
         display: flex;
         flex-direction: row;
@@ -19,24 +16,32 @@
         justify-content: space-between;
     }
     .detail-header .detail-title{
-        font-size: 20px;
+        font-size: 18px;
         flex:1;
+        color:#303133;
     }
-    .detail-header .backto{
+    .detail-header .detail-header-right{
         margin-left: 50px;
     }
     .detail-content{
-        font-size: 14px;
+        font-size: 16px;
+        line-height:1.5;
+        color:#606266;
     }
 </style>
 <body>
     <div class="detail-container">
-        <div class="basic-container">
+        <div class="s-basic-container">
             <div class="detail-header">
-                <span class="detail-title">我是标题我是标题我是标我是标题我是标题我是标题</span> 
-                <button class="btn backto">返回列表</button>
+                <div class="detail-header-left">
+                    <span class="detail-title">我是标题我是标题我是标我是标题我是标题我是标题</span>
+                </div>
+                <div class="detail-header-right">
+                    <button class="s-btn s-btn-success s-btn-mini finish-btn">完成</button>
+                    <button class="s-btn s-btn-mini backto-btn">返回</button>
+                </div>
             </div>
-            <div class="divider"></div>
+            <div class="s-divider"></div>
             <div class="detail-content">
                 我是详细内容
             </div>
@@ -44,7 +49,11 @@
     </div>
 </body>
 <script>
-    const backtoBtn=document.querySelector('.backto');
+    const finishBtn=document.querySelector('.finish-btn');
+    const backtoBtn=document.querySelector('.backto-btn');
+    finishBtn.onclick=()=>{
+        alert('完成当前任务')
+    }
     backtoBtn.onclick=()=>{
         window.location.href="./index.html"
     }

@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>创建</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./common.css">
 </head>
-<style>
-    .form{
-        margin: 0 auto;
-    }
-</style>
 <body>
     <div class="create-container">
-        <div class="basic-container">
-            <form class="form">
-                <div class="form-item">
-                    <span class="form-label">标题:</span>
-                    <input type="text" name="" class="form-item__content form-input todo-title">
+        <div class="s-basic-container">
+            <form class="s-form">
+                <div class="s-form-item">
+                    <span class="s-form-label">标题:</span>
+                    <div class="s-form-item__content">
+                        <input type="text" name="title" class="s-form-input title">
+                    </div>
                 </div>
-                <div class="form-item">
-                    <span class="form-label">内容:</span>
-                    <textarea name="" id="" cols="30" rows="10" class="form-item__content form-textarea todo-content"></textarea>
+                <div class="s-form-item">
+                    <span class="s-form-label">内容:</span>
+                    <div class="s-form-item__content">
+                        <textarea name="content" id="content" cols="30" rows="10" class="s-form-item__content s-form-textarea content"></textarea>
+                    </div>
                 </div>
-                <button type="button" class="btn btn-primary form-submit">提交</button>
-                <button type="button" class="btn form-cancel">取消并返回</button>
+                <button type="button" class="s-btn s-btn-primary submit-btn">提交</button>
+                <button type="button" class="s-btn cancel-btn">取消</button>
             </form>
         </div>
     </div>
 </body>
 <script>
-    const submitBtn=document.querySelector(".form-submit");
-    const cancelBtn=document.querySelector(".form-cancel");
+    const submitBtn=document.querySelector(".submit-btn");
+    const cancelBtn=document.querySelector(".cancel-btn");
     submitBtn.onclick=()=>{
         alert('新增代办成功')
     }

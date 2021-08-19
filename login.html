@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>登陆</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./common.css">
 </head>
-<style>
-    .form{
-        margin: 0 auto;
-    }
-</style>
 <body>
     <div class="login-container">
-        <div class="basic-container">
-            <form class="form">
-                <div class="form-item">
-                    <span class="form-label">用户名:</span>
-                    <input type="text" name="" class="form-item__content form-input todo-title">
+        <div class="s-basic-container">
+            <form class="s-form">
+                <div class="s-form-item">
+                    <span class="s-form-label">用户名:</span>
+                    <div class="s-form-item__content">
+                        <input type="text" name="username" class="s-form-input username">
+                    </div>
                 </div>
-                <div class="form-item">
-                    <span class="form-label">密码:</span>
-                    <input type="password" name="" class="form-item__content form-input todo-title">
+                <div class="s-form-item">
+                    <span class="s-form-label">密码:</span>
+                    <div class="s-form-item__content">
+                        <input type="password" name="password" class="s-form-input password">
+                    </div>
                 </div>
-                <button type="button" class="btn btn-primary login-btn">登录</button>
-                <button type="button" class="btn register-btn">注册</button>
-                <button type="button" class="btn backto-btn">返回</button>
+                <button type="button" class="s-btn s-btn-primary login-btn">登录</button>
+                <button type="button" class="s-btn register-btn">注册</button>
+                <button type="button" class="s-btn backto-btn">返回</button>
             </form>
         </div>
     </div>
