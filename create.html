@@ -24,17 +24,17 @@
                         <textarea name="content" id="content" cols="30" rows="10" class="s-form-item__content s-form-textarea content"></textarea>
                     </div>
                 </div>
-                <button type="button" class="s-btn s-btn-primary submit-btn">提交</button>
+                <button type="button" class="s-btn s-btn-primary save-btn">保存</button>
                 <button type="button" class="s-btn cancel-btn">取消</button>
             </form>
         </div>
     </div>
 </body>
 <script>
-    const submitBtn=document.querySelector(".submit-btn");
+    const saveBtn=document.querySelector(".save-btn");
     const cancelBtn=document.querySelector(".cancel-btn");
-    submitBtn.onclick=()=>{
-        alert('新增代办成功')
+    saveBtn.onclick=()=>{
+        alert('代办保存成功')
     }
     cancelBtn.onclick=()=>{
         window.location.href="./index.html";
