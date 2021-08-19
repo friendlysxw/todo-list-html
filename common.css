@@ -261,7 +261,7 @@ ul,ol{
 .s-pagination .s-page-next:hover, .s-pagination .s-page-prev:hover,.s-pagination .s-pager .s-pager-number:hover{
     color:#409eff;
 }
-.s-pagination .s-pager .s-pager-active{
+.s-pagination .s-pager .s-pager-active,.s-pagination .s-pager .s-pager-active:hover{
     background-color: #409eff;
     color: #fff;
 }
