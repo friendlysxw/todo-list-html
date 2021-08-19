@@ -8,7 +8,9 @@ ul,ol{
     padding: 0px;
 }
 
-/* 内置基础内容盒子样式 */
+/* 内置类名样式 */
+
+/* 基础内容盒子 */
 .s-basic-container {
     width: 800px;
     margin: 20px auto;
@@ -25,7 +27,7 @@ ul,ol{
     margin-bottom: 20px;
     border-bottom: 1px solid #dcdfe6;
 }
-/* 内置按钮样式 */
+/* 按钮 */
 .s-btn {
     display: inline-block;
     line-height: 1;
@@ -119,7 +121,7 @@ ul,ol{
     padding: 12px 23px;
 }
 
-/* 内置表单样式 */
+/* 表单 */
 .s-form{
     display: block;
     width: 460px;
@@ -197,7 +199,7 @@ ul,ol{
     border-color: #409eff;
 }
 
-/* 内置分割线 */
+/* 分割线 */
 .s-divider{
     display: block;
     height: 1px;
@@ -205,4 +207,61 @@ ul,ol{
     margin: 24px 0;
     background-color: #dcdfe6;
     position: relative;
+}
+
+/* 分页 */
+.s-pagination{
+    white-space: nowrap;
+    padding: 2px 5px;
+    color: #303133;
+    font-weight: 700;
+}
+.s-pagination:after, .s-pagination:before {
+    display: table;
+    content: "";
+}
+.s-pagination:after {
+    clear: both;
+}
+.s-pagination button{
+    border: none;
+    padding: 0 6px;
+    background: transparent;
+}
+
+.s-pagination .s-pager {
+    user-select: none;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.s-pagination .s-page-next, .s-pagination .s-page-prev, .s-pagination .s-pager .s-pager-number {
+    margin: 0 5px;
+    background-color: #f4f4f5;
+    color: #606266;
+    min-width: 30px;
+    border-radius: 2px;
+    padding: 0 4px;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 13px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+}
+.s-pagination .s-page-next:hover, .s-pagination .s-page-prev:hover,.s-pagination .s-pager .s-pager-number:hover{
+    color:#409eff;
+}
+.s-pagination .s-pager .s-pager-active{
+    background-color: #409eff;
+    color: #fff;
 }
